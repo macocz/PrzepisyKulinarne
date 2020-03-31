@@ -8,22 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		515053F524327C9F009F599A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515053F424327C9F009F599A /* AppDelegate.swift */; };
-		515053F724327C9F009F599A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515053F624327C9F009F599A /* SceneDelegate.swift */; };
-		515053F924327C9F009F599A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515053F824327C9F009F599A /* ViewController.swift */; };
-		515053FC24327C9F009F599A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515053FA24327C9F009F599A /* Main.storyboard */; };
 		515053FE24327CA2009F599A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515053FD24327CA2009F599A /* Assets.xcassets */; };
 		5150540124327CA2009F599A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515053FF24327CA2009F599A /* LaunchScreen.storyboard */; };
+		51578D7B2433C67B0020D7FA /* RecipesViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 51578D7A2433C67B0020D7FA /* RecipesViewController .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		515053F124327C9F009F599A /* PrzepisyKulinarne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrzepisyKulinarne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		515053F424327C9F009F599A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		515053F624327C9F009F599A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		515053F824327C9F009F599A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		515053FB24327C9F009F599A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		515053FD24327CA2009F599A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5150540024327CA2009F599A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5150540224327CA2009F599A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51578D7A2433C67B0020D7FA /* RecipesViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipesViewController .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +52,37 @@
 		515053F324327C9F009F599A /* PrzepisyKulinarne */ = {
 			isa = PBXGroup;
 			children = (
-				515053F424327C9F009F599A /* AppDelegate.swift */,
-				515053F624327C9F009F599A /* SceneDelegate.swift */,
-				515053F824327C9F009F599A /* ViewController.swift */,
-				515053FA24327C9F009F599A /* Main.storyboard */,
-				515053FD24327CA2009F599A /* Assets.xcassets */,
-				515053FF24327CA2009F599A /* LaunchScreen.storyboard */,
-				5150540224327CA2009F599A /* Info.plist */,
+				51578D7C2433C6980020D7FA /* RecipesList */,
+				51578D7E2433C8060020D7FA /* App config */,
 			);
 			path = PrzepisyKulinarne;
+			sourceTree = "<group>";
+		};
+		51578D7C2433C6980020D7FA /* RecipesList */ = {
+			isa = PBXGroup;
+			children = (
+				515053FF24327CA2009F599A /* LaunchScreen.storyboard */,
+				51578D7D2433C6EE0020D7FA /* View */,
+			);
+			path = RecipesList;
+			sourceTree = "<group>";
+		};
+		51578D7D2433C6EE0020D7FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51578D7A2433C67B0020D7FA /* RecipesViewController .swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		51578D7E2433C8060020D7FA /* App config */ = {
+			isa = PBXGroup;
+			children = (
+				515053FD24327CA2009F599A /* Assets.xcassets */,
+				5150540224327CA2009F599A /* Info.plist */,
+				515053F424327C9F009F599A /* AppDelegate.swift */,
+			);
+			path = "App config";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +145,6 @@
 			files = (
 				5150540124327CA2009F599A /* LaunchScreen.storyboard in Resources */,
 				515053FE24327CA2009F599A /* Assets.xcassets in Resources */,
-				515053FC24327C9F009F599A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				515053F924327C9F009F599A /* ViewController.swift in Sources */,
 				515053F524327C9F009F599A /* AppDelegate.swift in Sources */,
-				515053F724327C9F009F599A /* SceneDelegate.swift in Sources */,
+				51578D7B2433C67B0020D7FA /* RecipesViewController .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		515053FA24327C9F009F599A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				515053FB24327C9F009F599A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		515053FF24327CA2009F599A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,7 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PrzepisyKulinarne/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PrzepisyKulinarne/App config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MaciejOczos.PrzepisyKulinarne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PrzepisyKulinarne/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PrzepisyKulinarne/App config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MaciejOczos.PrzepisyKulinarne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
